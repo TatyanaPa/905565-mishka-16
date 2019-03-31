@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Tatya Maximenkо](https://up.htmlacademy.ru/adaptive/16/user/905565).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Ветер`(https://htmlacademy.ru/profile/id73199).
 
 ---
 
