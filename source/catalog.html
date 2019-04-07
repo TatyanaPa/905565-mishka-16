@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Каталог Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="" width="86" height="35" alt="Логотип Мишки">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__hamburger" type="button" aria-label="Открыть меню">
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="catalog.html">Каталог
+              товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="knitting.html">Вязание на заказ</a></li>
+          <li class="site-list__item search"><a class="site-list__link" href="search.html">Поиск по сайту</a></li>
+          <li class="site-list__item basket"><a class="site-list__link" href="basket.html">Корзина:пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="catalog">
+    <h1 class="visually-hidden">Страница каталога товаров</h1>
+    <section class="catalog__headline headline">
+      <h2 class="headline__text">Каталог товаров</h2>
+    </section>
+
+    <section class="catalog__content">
+      <div class="catalog__item product">
+
+        <a class="product__img">
+          <img src="#" alt="Зайчик-попрыгайчик">
+        </a>
+        <div class="product__content">
+          <div class="product__head">
+            <a class="product__title">
+              <h3 class="product__h">Зайчик-попрыгайчик</h3>
+              <!-- может не надо h3 ведь есть тег а  с отдельным классом-->
+            </a>
+            <p class="product__info">
+              Рост 30 см, вес 200 г
+            </p>
+          </div>
+
+          <div class="product__cost">
+            <p class="product__price">
+              1 200 руб.
+            </p>
+            <button class="product__action">Кнопка Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog__content">
+      <div class="catalog__item product">
+
+        <a class="product__img">
+          <img src="#" alt="Корзинка для белья">
+        </a>
+        <div class="product__content">
+          <div class="product__head">
+            <a class="product__title">
+              <h3 class="product__h">Корзинка для белья</h3>
+              <!-- может не надо h3 ведь есть тег а  с отдельным классом-->
+            </a>
+            <p class="product__info">
+              Диаметр 15см, высота 10см
+            </p>
+          </div>
+
+          <div class="product__cost">
+            <p class="product__price">
+              690 руб.
+            </p>
+            <button class="product__action">Кнопка Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog__content">
+      <div class="catalog__item product">
+
+        <a class="product__img">
+          <img src="#" alt="Большая корзинка для игрушек">
+        </a>
+        <div class="product__content">
+          <div class="product__head">
+            <a class="product__title">
+              <h3 class="product__h">Большая корзинка для игрушек</h3>
+              <!-- может не надо h3 ведь есть тег а  с отдельным классом-->
+            </a>
+            <p class="product__info">
+              Диаметр 30см, высота 30см
+            </p>
+          </div>
+
+          <div class="product__cost">
+            <p class="product__price">
+              1 500 руб.
+            </p>
+            <button class="product__action">Кнопка Добавить в корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog__video video">
+      <div class="video__headline">
+        <span class="headline__text">Процесс производства</span>
+        <div class="headline__icon">Псевдоэлемент - Иконка в заголовке видео</div>
+      </div>
+      <div class="video__clip">
+        Видеоролик
+      </div>
+      <div class="video__play">
+        Кнопка включения видео
+        <div class="play__triangle">Треугольник в кнопке play</div>
+      </div>
+      <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются
+        наши товары.</p>
+
+      <button class="video__button">Сделать заказ</button>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer__social social">
+        <a class="social__icon social__icon--instagramm" aria-label="Инстаграмм"></a>
+        <a class="social__icon social__icon--facebook" aria-label="Фэйсбук"></a>
+        <a class="social__icon social__icon--twitter" aria-label="Твитер"></a>
+      </section>
+      <section class="footer-developer developer">
+        <span class="developer__text">Разработано</span>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Академии">
+          <img class="developer__logo" src="#" width="27" height="24" alt="Логотип Академии">
+        </a>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
