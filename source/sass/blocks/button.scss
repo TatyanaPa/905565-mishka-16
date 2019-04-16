@@ -1,0 +1,12 @@
+.button{
+  width:259px;
+  height:52px;
+  background-color: $main-bcg-color;
+  border:2px solid #444;
+  font-family: inherit;
+  font-size: $button-font-size;
+  line-height: $accent-line-height;
+  color:$main-font-color;
+  text-align: center;
+  text-transform: uppercase;
+}
