@@ -1,10 +1,11 @@
-.about__list{
-  padding-left:0;
+.about__list {
+  padding-left: 0;
   list-style: none;
 }
-.about__item{
-  font-family:$second-font-family;
+
+.about__item {
+  font-family: $second-font-family;
   font-size: $accent-font-size;
-  color:$accent-font-color;
+  color: $accent-font-color;
   line-height: $accent-line-height;
-  }
+}

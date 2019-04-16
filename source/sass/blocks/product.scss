@@ -1,15 +1,17 @@
-.product__title{
+.product__title {
   font-size: $accent-font-size;
-  line-height:2$second-line-height;
+  line-height: 2$second-line-height;
   font-family: $second-font-family;
   color: $accent-font-color;
 }
-.product__info{
-  font-size:13px;
-  color:$main-font-color;
+
+.product__info {
+  font-size: 13px;
+  color: $main-font-color;
 }
-.product__price{
-line-height: $second-line-height;
-font-family: $second-font-family;
-color: $accent-font-color;
+
+.product__price {
+  line-height: $second-line-height;
+  font-family: $second-font-family;
+  color: $accent-font-color;
 }

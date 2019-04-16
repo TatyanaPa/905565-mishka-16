@@ -1,24 +1,28 @@
-.item-title{
-  font-size:25px;
+.item-title {
+  font-size: 25px;
   line-height: $main-line-height;
   font-family: $second-font-family;
-  color:$accent-font-color;
+  color: $accent-font-color;
 }
-.product-week__sign{
+
+.product-week__sign {
   font-size: $accent-font-size;
   line-height: $accent-line-height;
   font-family: $second-font-family;
-  color:$second-accent-color;
+  color: $second-accent-color;
   text-transform: uppercase;
 }
-.product-week__discription{
-   line-height:$accent-line-height;
- }
-.options{
-  font-size:$accent-font-size;
+
+.product-week__discription {
   line-height: $accent-line-height;
 }
-.product-week__cost{
+
+.options {
+  font-size: $accent-font-size;
+  line-height: $accent-line-height;
+}
+
+.product-week__cost {
   line-height: $second-line-height;
   font-family: "Opensansbold", Arial, sans-serif;
-  }
+}

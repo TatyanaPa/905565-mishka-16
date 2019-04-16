@@ -1,12 +1,14 @@
-  .comment__text{
+  .comment__text {
     font-family: $main-font-family;
-     }
-  .comment__sign{
+  }
+
+  .comment__sign {
     font-family: $second-font-family;
     font-size: $accent-font-size;
     line-height: $second-line-height;
-    color:$accent-font-color;
+    color: $accent-font-color;
   }
-  .comment__mail{
-            font-size: $accent-font-size;
-          }
+
+  .comment__mail {
+    font-size: $accent-font-size;
+  }
