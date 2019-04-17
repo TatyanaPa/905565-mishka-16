@@ -1,0 +1,17 @@
+.footer {
+  width: 320px;
+  height: 160px;
+  background-color: $second-bcg-color;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.developer__text {
+  font-size: $second-accent-font-size;
+  line-height: $form-line-height;
+  font-family: $second-font-family;
+  color: $accent-font-color;
+}

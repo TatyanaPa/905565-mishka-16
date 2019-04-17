@@ -1,0 +1,10 @@
+.main-nav__list {
+  list-style: none;
+}
+
+.site-list__item {
+  font-size: $accent-font-size;
+  line-height: $second-line-height;
+  font-family: $second-font-family;
+  color: $accent-font-color;
+}
