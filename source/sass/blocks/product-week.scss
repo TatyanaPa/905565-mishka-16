@@ -1,28 +1,193 @@
-.item-title {
-  font-size: 25px;
-  line-height: $main-line-height;
-  font-family: $second-font-family;
-  color: $accent-font-color;
+.product-week {
+position: relative;
+padding-top: 24px;
+padding-bottom: 6px;
+
+@media (min-width: $tablet-width) {
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 
+@media (min-width: $desktop-width) {
+  padding-top: 119px;
+  padding-bottom: 61px;
+}
+
+&::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 7px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-size: 320px 7px;
+  background-position-x: -8px;
+  background-repeat: repeat-x;
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+    background-size: 768px 17px;
+    background-position-x: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50px;
+    right: 50px;
+    height: 23px;
+    background-size: 1050px 21px;
+    background-position-x: -25px;
+  }
+}
+}
+.product-week__header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 28px;
+    padding: 5px 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 19px;
+  }
+}
+.product-week__title {
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    max-width: none;
+  }
+}
 .product-week__sign {
-  font-size: $accent-font-size;
-  line-height: $accent-line-height;
-  font-family: $second-font-family;
-  color: $second-accent-color;
-  text-transform: uppercase;
+margin-top: 4px;
+margin-bottom: 4px;
+font-size: $accent-font-size;
+font-weight: 600;
+line-height: $accent-line-height;
+color: $second-accent-color;
+text-transform: uppercase;
+
+@media (min-width: $tablet-width) {
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 0;
+  max-width: 127px;
+  line-height: $third-line-height;
+  text-align: center;
 }
 
+@media (min-width: $desktop-width) {
+  margin-left: 0;
+  margin-right: 25px;
+}
+}
+.product-week__main-wrapper{
+position: relative;
+padding-top: 2px;
+padding-bottom: 36px;
+
+@media (min-width: $tablet-width) {
+  padding-top: 16px;
+  padding-right: 378px;
+}
+
+@media (min-width: $desktop-width) {
+  padding-left: 175px;
+  padding-right: 584px;
+}
+}
 .product-week__discription {
-  line-height: $accent-line-height;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: $accent-font-size;
+    line-height: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
+.product-week__table {
+  margin-bottom: 28px;
+	@media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+}
+.table-specification {
+  width: 100%;
+  border-spacing: 0;
+  line-height: 20px;
+}
+.table-specification__cell {
+padding: 10px 10px 10px 0;
+&:first-child {
+  width: 37.5%;
+  @media (min-width: $tablet-width) {
+    width: 33.4%;
+  }
+}
+}
+.product-week__image-wrapper {
+  margin: 0 auto;
+  width: 260px;
+  height: 315px;
+  overflow: hidden;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    margin: 0;
+    width: 333px;
+    height: 404px;
+  }
+  @media (min-width: $desktop-width) {
+    z-index: -1;
+    top: -143px;
+    width: 525px;
+    height: 636px;
+  }
+}
+.product-week__image {
+  display: block;
+  width: 260px;
+  height: auto;
 
-.options {
+  @media (min-width: $tablet-width) {
+    width: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+}
+.product-week__prise {
+  margin-top: 25px;
+  margin-bottom: 26px;
   font-size: $accent-font-size;
-  line-height: $accent-line-height;
+  font-weight: 600;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+}
+.product-week__button {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
-.product-week__cost {
-  line-height: $second-line-height;
-  font-family: $second-font-family;
-}
+

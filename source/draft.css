@@ -1,0 +1,13 @@
+.{color: #f9f9f9;
+ color:  #f1f1f1;
+ color: white;}
+
+ (min-width: $mobile-width)
+ (min-width: $tablet-width)
+(min-width: $desktop-width)
+
+
+
+@media (min-width: $mobile-l-width)
+@media (min-width: $tablet-width)
+@media (min-width: $desktop-width)

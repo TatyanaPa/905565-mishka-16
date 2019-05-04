@@ -1,10 +1,30 @@
-.page-header {
-  min-height: 78px;
+.page-main {
+  border-bottom: 1px solid $second-bcg-color;
 }
-
-// .page-header__logo{
-//   // display:block;
-//   // margin-top:20px;
-//   // margin-left:115px;
-//   // margin-right:115px;
-// }
+.page-header {
+  background-color: #ffffff;
+  @media (min-width: $tablet-width) {
+  background-color: #f1f1f1;
+  }
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+  }
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: #f9f9f9;
+    }
+  }
+}
+.header-logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 150px;
+    height: 75px;
+  }
+}

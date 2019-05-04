@@ -1,14 +1,188 @@
-.comment__text {
-  font-family: $main-font-family;
+.comments {
+    position: relative;
+	  padding-top: 17px;
+	  padding-bottom: 51px;
+	  @media (min-width: $tablet-width) {
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-items: flex-start;
+	    padding-top: 60px;
+	    padding-bottom: 127px;
+	    background-image: url("../../img/review@1x.jpg");
+	    background-size: image-size("../../img/review@1x.jpg");
+	    background-position: left top;
+      background-repeat: no-repeat;
+    }
+	    @media (min-width: $desktop-width) {
+	      padding-top: 55px;
+	      padding-left: 225px;
+	      padding-bottom: 183px;
+	      background-position-x: 50px;
+	    }
+	    &::after {
+	    content: "";
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    height: 7px;
+	    background-image: url("../../img/bg-zigzag-line.svg");
+	    background-size: 320px 7px;
+	    background-position-x: -8px;
+	    background-repeat: repeat-x;
+      @media (min-width: $tablet-width) {
+	      height: 17px;
+	      background-size: 768px 17px;
+	      background-position-x: -20px;
+	    }
+	    @media (min-width: $desktop-width) {
+	      left: 50px;
+	      right: 50px;
+	      height: 23px;
+	      background-size: 1050px 21px;
+	      background-position-x: -25px;
+	    }
+	  }
+	}
+.comments__content {
+  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  line-height: 30px;
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
-
-.comment__sign {
-  font-family: $second-font-family;
+.comments__text {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-bottom: 58px;
+    font-size: $accent-font-size;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+    max-width: 790px;
+  }
+}
+.comments__author {
+  display: block;
   font-size: $accent-font-size;
-  line-height: $second-line-height;
+  font-style: normal;
+  line-height: $main-line-height;
+}
+.comments__author-name {
+  display: block;
+  font-weight: 600;
   color: $accent-font-color;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: $second-line-height;
+  }
+}
+.comments__author-email {
+color: $main-font-color;
+text-decoration: none;
+}
+.comments__pagination {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto 38px;
+  max-width: 320px;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 50px;
+    bottom: 134px;
+    margin: 0;
+    width: 175px;
+  }
+  @media (min-width: $desktop-width) {
+    bottom: 189px;
+  }
+}
+.pagination__btn {
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  width: 50%;
+  height: 52px;
+  border: 1px solid $border-color;
+  background-color: transparent;
+  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+  &--prev {
+    &::after {
+      background-image: url("../../img/icon-left-arrow.svg");
+    }
+  }
+  &--next {
+    border-width: 1px 1px 1px 0;
+    &::after {
+      background-image: url("../../img/icon-right-arrow.svg");
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 26px;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: 50px 26px;
+  }
+  &:hover::after {
+    opacity: 0.6;
+  }
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+.comments__write {
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-right: 0;
+    width: 175px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+  }
 }
 
-.comment__mail {
-  font-size: $accent-font-size;
-}
+//.comment {
+//   padding: 30px 0 39px;
+// }
+
+// .comment__wrapper {
+//   flex-direction: column;
+//   // justify-content: flex-start;
+//   // align-items: stretch;
+// }
+
+// .comment__title {
+//   width: 100%;
+//   letter-spacing: normal;
+// }
+
+
+// .comment__text {
+//   font-family: $main-font-family;
+// }
+
+// .comment__sign {
+//   margin: 0;
+//   font-weight: bold;
+//   font-size: $accent-font-size;
+//   line-height: $second-line-height;
+//   color: $accent-font-color;
+// }
+
+// .comment__mail {
+//   font-size: $accent-font-size;
+//   color: $main-font-color;
+// }
