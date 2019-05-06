@@ -4,249 +4,185 @@
 <head>
   <meta charset="utf-8">
   <title>Главная Мишка</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page">
-
-  <header class="page-header page-header--index">
-    <nav class="main-nav main-nav--no-js">
-      <div class="main-nav__logo-wrapper">
-        <a class="main-nav__logo header-logo">
-
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
-          </picture>
-        </a>
-
-        <button class="main-nav__toggle main-nav__toggle--closed" id="toggle-button" type="button"
-          aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span>
-        </button>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишки">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__hamburger" type="button" aria-label="Открыть меню">
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="catalog.html">Каталог
+              товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="knitting.html">Вязание на заказ</a></li>
+          <li class="site-list__item search"><a class="site-list__link" href="search.html">Поиск по сайту</a></li>
+          <li class="site-list__item basket"><a class="site-list__link" href="basket.html">Корзина: пока пуста</a></li>
+        </ul>
       </div>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a class="site-list__link" href="catalog.html">Каталог
-            товаров</a></li>
-
-        <li class="site-list__item"><a class="site-list__link" href="knitting.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="main-nav__user user-list">
-        <li class="user-list__item"><a class="user-list__link user-list__link--search" href="#">
-
-            <!-- <svg class="user-list__link-image" width="18" height="18">
-            <use xlink:href="img/symbols.svg#icon-search"></use>
-          </svg> -->
-
-            <span class="user-list__link-text">Поиск по сайту</span>
-          </a>
-        </li>
-        <li class="user-list__item "><a class="user-list__link user-list__link--basket" href="#">
-            <!-- <svg class="user-list__link-image" width="20" height="19">
-              <use xlink:href="img/symbols.svg#icon-cart"></use>
-            </svg> -->
-            Корзина: пока пуста</a></li>
-      </ul>
-      <ul class="main-nav__sale sale-navigation">
-        <li class="sale-navigation__item">
-          <a class="sale-navigation__link" href="#">Новые поступления</a>
-        </li>
-        <li class="sale-navigation__item">
-          <a class="sale-navigation__link" href="#">Распродажа</a>
-        </li>
-      </ul>
-      <p class="main-nav__delivery">Бесплатная доставка по России</p>
     </nav>
   </header>
 
+
   <main class="page-main">
+
     <h1 class="visually-hidden"> Магазин милых штук ручной работы для дома</h1>
 
     <section class="notice">
-      <div class="notice__content-wrapper content-wrapper">
+
+      <div class="notice__header">
+        <!-- <h2 class="visually-hidden">Разделы сайта</h2> -->
         <h2 class="notice__slogan">Милые штуки ручной работы для дома</h2>
-        <ul class="notice__list notice-list">
-          <li class="notice-list__item">
-            <a class="notice-list__link notice-list__link--interior">
-              <span class="notice-list__text">Предметы интерьера</span></a>
+
+        <ul class="notice__header">
+          <li class="notice__item notice__item--interior">
+            <a class="notice__link">Предметы интерьера</a>
+            <!-- <div class="notice__picture notice__picture--interior"> Возможно этот ДИВ лучше убрать и сделать бэкграундом
+        </div> -->
           </li>
-          <li class="notice-list__item">
-            <a class="notice-list__link notice-list__link--toy">
-              <span class="notice-list__text">Детские игрушки</span></a>
+          <li class="notice__item notice__item--toys">
+            <a class="notice__link">Детские игрушки</a>
+            <!-- <div class="notice__picture notice__picture--toys"> Возможно этот ДИВ лучше убрать и сделать бэкграундом</div> -->
           </li>
         </ul>
-      </div>
     </section>
 
-    <section class="product-week content-wrapper">
-
-      <header class="product-week__header">
-        <h2 class="product-week__title section-title">Вязаные корзинки</h2>
-        <p class="product-week__sign">Товар недели</p>
-      </header>
-      <div class="product-week__main-wrapper">
+    <div class="main-content">
+      <section class="main-content__item product-week">
+        <h2 class="product-week item-title">Вязанные корзинки</h2>
+        <div class="product-week__sign">Товар недели</div>
         <p class="product-week__discription">Экологически чистая пряжа, ручная работа. Доступна в шести расцветках, и
           трех размерах. </p>
-        <table class="product-week__table table-specification">
-          <tbody>
-            <tr class="table-specification__row">
-              <td class="table-specification__cell">
-                Цвет:
-              </td>
-              <td class="table-specification__cell">
-                «Тиффани»/серый
-              </td>
-            </tr>
-            <tr class="table-specification__row">
-              <td class="table-specification__cell">
-                Диаметр:
-              </td>
-              <td class="table-specification__cell">
-                25 см
-              </td>
-            </tr>
-            <tr class="table-specification__row">
-              <td class="table-specification__cell">
-                Высота:
-              </td>
-              <td class="table-specification__cell">
-                15 см
-              </td>
-            </tr>
-          </tbody>
+        <table class="product-week__options options">
+          <tr class="options__item">
+            <td class="options__type">
+              Цвет:
+            </td>
+            <td class="options_value">
+              "Тиффани"/серый
+            </td>
+          </tr>
+          <tr>
+            <td class="options__type">
+              Диаметер:
+            </td>
+            <td class="options_value">
+              25 см
+            </td>
+          </tr>
+          <tr>
+            <td class="options__type">
+              Высота:
+            </td>
+            <td class="options_value">
+              15 см
+            </td>
+          </tr>
         </table>
-        <div class="product-week__image-wrapper">
-          <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" alt="Корзинки">
+        <img class="product-week__picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Корзинки">
+        <div class="product-week__cost">
+          Цена:990 руб.
         </div>
-        <p class="product-week__prise">
-          Цена: 990 руб.
-        </p>
-        <a class="product-week__button button">
+        <button class="product-week__button button">
           Заказать
-        </a>
-      </div>
-    </section>
+        </button>
+      </section>
 
-    <section class="about content-wrapper">
-      <h2 class="about__title section-title">Коротко о нас:</h2>
-      <ul class="about__list about-list">
-        <li class="about__list-item about__list-item--ecology">Экологически чистые материалы</li>
-        <li class="about__list-item about__list-item--cost">Скандинавский стиль по российской цене</li>
-        <li class="about__list-item about__list-item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="about__list-item about__list-item--handmade">Связано вручную с любовью и умилением</li>
-        <li class="about__list-item about__list-item--support">Поддержка отечественного производителя</li>
-        <li class="about__list-item about__list-item--pack">Поставляется в подарочной упаковке</li>
-      </ul>
-    </section>
+      <section class="main-content__item about">
+        <h2 class="about item-title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item about__item--ecology">Экологически чистые материалы</li>
+          <li class="about__item about__item--cost">Скандинавский стиль по российской цене</li>
+          <li class="about__item about__item--like">Увеличивает лайки на фотографиях</li>
+          <li class="about__item about__item-handmade">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--patriotism">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--packaging">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
 
-    <section class="comments content-wrapper">
-
-      <h2 class="comments__title section-title">Отзывы</h2>
-      <blockquote class="comments__content">
-        <p class="comments__text">
+      <section class="main-content__item comment">
+        <h2 class="comment item-title">Отзывы</h2>
+        <p class="comment__text">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-          инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более
+          инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
           стильными, а также набирают больше лайков!
         </p>
-        <cite class="comments__author">
-          <span class="comments__author-name">Анастасия Красильникова</span>
-          <a class="comments__author-email" href="mailto:misssssiskras@gmail.com">@misssssiskras</a>
-        </cite>
-      </blockquote>
-      <div class="comments__pagination">
-        <button class="pagination__btn pagination__btn--prev" type="button" aria-label="Назад"></button>
+        <p class="comment__sign">
+          Анастасия Красильникова</p>
+        <a class="comment__mail" href="#">@misssssiskras</a>
+        </p>
+        <ul class="comment__pagination pagination">
+          <li class="pagination__btn pagination__btn-prev">
+            <a class="pagination__link" href="#">
+              Назад
+            </a>
+          </li>
+          <li class="pagination__btn pagination__btn-next"><a class="pagination__link" href="#">
+              Вперед
+            </a>
+          </li>
+        </ul>
+        <button class="comment__write button">Написать</button>
+      </section>
 
-        <button class="pagination__btn pagination__btn--next" type="button" aria-label="Вперёд"></button>
-      </div>
-      <a class="comments__write button" href="#">Написать</a>
-    </section>
+      <section class="main-content__item contacts">
+        <h3 class="contacts">Контакты</h3>
 
-    <section class="contacts">
-      <div class="contacts__wrapper content-wrapper">
-        <h2 class="contacts__title">Контакты</h2>
-
-        <dl class="contacts__info">
-          <dt class="contacts__info-term">e-mail:</dt>
-          <dd class="contacts__info-description"><a class="mail-link"
-              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-
-          <dt class="contacts__info-term">адрес:</dt>
-          <dd class="contacts__info-description">г. Санкт-Петербург,<br>
-            ул. Большая Конюшенная,<br>
-            д. 19/8, офис 101</dd>
-        </dl>
-      </div>
-      <div class="contacts__map map">
-
-        <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="457"
-          alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <div class="map__marker"></div>
-        <div class="map__interactive " id="map"></div>
-      </div>
-
-      <div class="contacts__button-wrapper content-wrapper">
-        <a class="contacts__button button" href="#">Напишите нам</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper content-wrapper">
-
-      <a class="page-footer__logo footer-logo" aria-label="Мишка">
-      </a>
-
-      <ul class="social-links">
-        <li class="social-links__item">
-          <a class="social-links__link" href="https://www.instagram.com" aria-label="Instagram">
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
-          </a>
-        </li>
-      </ul>
-      <p class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="HTML Academy">
-          <span class="page-footer__copyright-text">Разработано</span>
+        <div class="contacts__info">
+          <div class="email__item">e-mail:</div>
+          <div class="email__item-name">info@mimimishkashop.ru</div>
+        </div>
+        <div class="contacts__info">
+          <div class="address__item">адрес:</div>
+          <div class="address__item-name">г. Санкт-Петербург,
+            ул. Большая Конюшенная,
+            д. 19/8, офис 101</div>
+        </div>
+        <a class="contacts__link" href="info.html" aria-label="Карта расположения офиса">
+          <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457"
+            alt="Карта расположения офиса">
         </a>
-      </p>
+        <!-- Блок с карток на всю ширину 320px, сейчас на ширину wrupper - 260px, не пойму как его расширить лучше -->
+        <button class="contacts__write-to-us button">Напишите нам</button>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer__social social">
+        <a class="social__icon social__icon--instagramm" aria-label="Инстаграмм">
+          <img src="img/icon-insta.svg" width="22" height="21" alt="Логотип Инстаграмм">
+        </a>
+        <a class="social__icon social__icon--facebook" aria-label="Фэйсбук">
+          <img src="img/icon-fb.svg" width="22" height="21" alt="Логотип Фэйсбук">
+        </a>
+        <a class="social__icon social__icon--twitter" aria-label="Твиттер">
+          <img src="img/icon-twitter.svg" width="22" height="21" alt="Твиттер">
+        </a>
+      </section>
+      <section class="footer-developer developer">
+        <span class="developer__text">Разработано</span>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Академии">
+          <!-- <img class="developer__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Академии"> -->
 
+          <svg class="developer__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
+            viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path fill="#63d1bb"
+              d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
+          </svg>
+        </a>
+      </section>
     </div>
   </footer>
-  <div class="modal-overlay page__overlay">
-    <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
-      <h2 class="form-cart__title">Добавить в корзину</h2>
-
-      <fieldset class="form-cart__fieldset">
-        <legend class="form-cart__legend">Выберите размер:</legend>
-
-        <div class="form-cart__input-wrapper">
-          <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
-          <label class="form-cart__label" for="size-s">S</label>
-          <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
-          <label class="form-cart__label" for="size-m">M</label>
-          <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
-          <label class="form-cart__label" for="size-l">L</label>
-        </div>
-      </fieldset>
-
-      <button class="form-cart__button button button--green" type="submit">Добавить</button>
-    </form>
-  </div>
 
 
   <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
 
 </body>
 
