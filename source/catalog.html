@@ -9,7 +9,7 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
+  <header class="page-header page-header--index">
     <nav class="main-nav main-nav--no-js">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" href="index.html" aria-label="Мишка">
@@ -29,15 +29,22 @@
         <li class="site-list__item site-list__item--active"><a class="site-list__link" href="catalog.html">Каталог
             товаров</a></li>
 
-        <li class="site-list__item"><a class="site-list__link" href="knitting.html">Вязание на заказ</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
       </ul>
       <ul class="main-nav__user user-list">
-        <li class="user-list__item"><a class="user-list__link user-list__link--search" href="#">
+        <li class="user-list__item">
+          <a class="user-list__link user-list__link--search" href="#">
+              <svg class="user-list__link-image" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
 
-            <span class="user-list__link-text">Поиск по сайту</span>
+          <span class="user-list__link-text">Поиск по сайту</span>
           </a>
         </li>
         <li class="user-list__item "><a class="user-list__link user-list__link--basket" href="#">
+            <svg class="user-list__link-image" width="20" height="19">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
 
             Корзина: пока пуста</a></li>
       </ul>
@@ -55,127 +62,154 @@
 
   <main class="page-main">
     <header class="page-main__header">
-      <h1 class="visually-hidden">Страница каталога товаров</h1>
-      <section class="catalog__headline headline">
-        <h2 class="headline__text">Каталог товаров</h2>
-      </section>
-
-      <section class="catalog__content">
-        <div class="catalog__item product">
-
-          <a class="product__img">
-            <img src="img/photo-hare-mobile@1x.jpg" width="260px" height="195px" alt="Зайчик-попрыгайчик">
+      <div class="content-wrapper">
+        <h1 class="page-main__title">Каталог товаров</h1>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <div class="catalog">
+        <article class="catalog__card-product card-product">
+          <a class="card-product__link-image" href="#">
+            <!-- <img src="img/photo-hare-mobile@1x.jpg" width="260px" height="195px" alt="Зайчик-попрыгайчик"> -->
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px"
+                srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)"
+                srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg"
+                srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+            </picture>
           </a>
-          <div class="product__content">
-            <div class="product__head">
-              <a class="product__title">
-                Зайчик-попрыгайчик
+          <div class="card-product__description-wrapper">
+            <h3 class="card-product__title">
+              <a class="card-product__link" href="#">Зайчик-попрыгайчик</a>
+            </h3>
+            <p class="card-product__description">Рост 30 см, вес 200 г</p>
+            <div class="card-product__price-wrapper">
+              <p class="card-product__price">1 200 руб.</p>
+              <a class="card-product__button" href="#" aria-label="Добавить в корзину">
+                <svg class="card-product__button-image" width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
               </a>
-              <p class="product__info">
-                Рост 30 см, вес 200 г
-              </p>
-            </div>
-
-            <div class="product__cost">
-              <p class="product__price">
-                1 200 руб.
-              </p>
-              <button class="product__action">Кнопка Добавить в корзину</button>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="catalog__content">
-        <div class="catalog__item product">
-
-          <a class="product__img">
-            <img src="img/photo-bowl-mobile@1x.jpg" width="260px" height="195px" alt="Корзинка для белья">
+        </article>
+        <article class="card-product catalog__card-product">
+          <a class="card-product__link-image" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)"
+                srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg"
+                srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
+            </picture>
           </a>
-          <div class="product__content">
-            <div class="product__head">
-              <a class="product__title">
-                Корзинка для белья
+          <div class="card-product__description-wrapper">
+            <h3 class="card-product__title">
+              <a class="card-product__link" href="#">Корзинка для белья</a>
+            </h3>
+            <p class="card-product__description">Диаметр 15 см, высота 10 см</p>
+            <div class="card-product__price-wrapper">
+              <p class="card-product__price">690 руб.</p>
+              <a class="card-product__button" href="#" aria-label="Добавить в корзину">
+                <svg class="card-product__button-image" width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
               </a>
-              <p class="product__info">
-                Диаметр 15см, высота 10см
-              </p>
-            </div>
-
-            <div class="product__cost">
-              <p class="product__price">
-                690 руб.
-              </p>
-              <button class="product__action">Кнопка Добавить в корзину</button>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="catalog__content">
-        <div class="catalog__item product">
-
-          <a class="product__img">
-            <img src="img/photo-toys-mobile@1x.jpg" width="260px" height="195px" alt="Большая корзинка для игрушек">
+        </article>
+        <article class="card-product catalog__card-product">
+          <a class="card-product__link-image" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)"
+                srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg"
+                srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+            </picture>
           </a>
-          <div class="product__content">
-            <div class="product__head">
-              <a class="product__title">
-                Большая корзинка для игрушек
+          <div class="card-product__description-wrapper">
+            <h3 class="card-product__title">
+              <a class="card-product__link" href="#">Большая корзинка для&nbsp;игрушек</a>
+            </h3>
+            <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
+            <div class="card-product__price-wrapper">
+              <p class="card-product__price">1 500 руб.</p>
+              <a class="card-product__button" href="#" aria-label="Добавить в корзину">
+                <svg class="card-product__button-image" width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
               </a>
-              <p class="product__info">
-                Диаметр 30см, высота 30см
-              </p>
-            </div>
-
-            <div class="product__cost">
-              <p class="product__price">
-                1 500 руб.
-              </p>
-              <button class="product__action">Кнопка Добавить в корзину</button>
             </div>
           </div>
-        </div>
-      </section>
-
+        </article>
+      </div>
       <section class="catalog__video video">
-        <div class="video__headline">
-          <div class="headline__text">Процесс производства</div>
-          <div class="headline__icon">Псевдоэлемент - Иконка в заголовке видео</div>
+        <h2 class="video__title">Процесс производства</h2>
+        <div class="video__content-wrapper">
+          <video class="video__content"></video>
+          <button class="video__play-button" type="button" aria-label="Воспроизвести"></button>
         </div>
-        <div class="video__clip">
-          Видеоролик
+        <div class="video__description-wrapper">
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+            как появляются наши товары.</p>
+          <a class="video__button button" href="#">Сделать заказ</a>
         </div>
-        <div class="video__play">
-          Кнопка включения видео
-          <div class="play__triangle">Треугольник в кнопке play</div>
-        </div>
-        <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-          появляются
-          наши товары.</p>
-
-        <button class="video__button button">Сделать заказ</button>
-
       </section>
+    </div>
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__wrapper content-wrapper">
 
-      <a class="page-footer__logo footer-logo" aria-label="Мишка">
+      <a class="page-footer__logo footer-logo" href="index.html" aria-label="Мишка">
+          <svg class="footer-logo__image" width="102" height="34">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
+            </svg>
+
       </a>
 
       <ul class="social-links">
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.instagram.com" aria-label="Instagram">
+            <svg class="social-links__image" width="22" height="21">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+
           </a>
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
+            <svg class="social-links__image(...)" width="15" height="28">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+
           </a>
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
+            <svg class="social-links__image" width="23" height="20">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+
           </a>
         </li>
       </ul>
@@ -183,11 +217,12 @@
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="HTML Academy">
           <span class="page-footer__copyright-text">Разработано</span>
+          <svg class="page-footer__copyright-image" width="27" height="34">
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
         </a>
       </p>
-
     </div>
   </footer>
 </body>
-
 </html>

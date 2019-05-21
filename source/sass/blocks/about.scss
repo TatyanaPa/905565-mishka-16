@@ -49,6 +49,7 @@
   line-height: $accent-line-height;
   background-repeat: no-repeat;
 
+
   @media (min-width: $tablet-width) {
     padding-bottom: 58px;
     width: 334px;
@@ -74,6 +75,7 @@
       height: 37px;
       background-image: url("../../img/icon-feature-flower.svg");
       background-size: 32px 37px;
+      fill: #63d1bb;
     }
   }
 

@@ -1,12 +1,8 @@
-.page-main {
-  border-bottom: 1px solid $second-bcg-color;
-}
-
 .page-header {
-  background-color: #ffffff;
+  background-color: $main-bcg-color;
 
   @media (min-width: $tablet-width) {
-    background-color: #f1f1f1;
+    background-color: $second-bcg-color;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,12 +11,36 @@
 
   &--index {
     @media (min-width: $tablet-width) {
-      background-color: #f9f9f9;
+      background-color: $third-bcg-color;
     }
   }
 }
 
 .header-logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 150px;
+    height: 75px;
+  }
+}
+
+.header-logo__image {
   display: block;
   width: 86px;
   height: 35px;

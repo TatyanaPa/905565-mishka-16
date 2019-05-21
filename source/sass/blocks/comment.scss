@@ -22,6 +22,10 @@
     background-position-x: 50px;
   }
 
+  @media (min-resolution: 144dpi) {
+    background-image: url("../../img/review@2x.jpg");
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -49,7 +53,6 @@
     }
   }
 }
-
 .comments__content {
   margin: 0;
   padding-top: 3px;
@@ -99,6 +102,14 @@
 .comments__author-email {
   color: $main-font-color;
   text-decoration: none;
+
+  &:hover {
+    color: $font-color-menu--hover;
+  }
+
+  &:active {
+    color: $font-color-menu--active;
+  }
 }
 
 .comments__pagination {
@@ -129,6 +140,7 @@
   border: 1px solid $border-color;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     border: 0;
