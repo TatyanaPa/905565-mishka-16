@@ -8,7 +8,7 @@
 @font-face {
   font-family: "Opensans";
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -62,7 +62,7 @@ input[type="radio"].visually-hidden {
 
 .section-title {
   font-size: $third-font-size;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   color: $font-color-section-title;
 
@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
   font-size: $third-font-size;
   line-height: $main-line-height;
   font-family: $main-font-family;
-  font-weight: 600;
+  font-weight: 700;
   color: $accent-font-color;
 }
 

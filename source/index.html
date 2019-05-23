@@ -12,7 +12,7 @@
 <body class="page">
 
   <header class="page-header page-header--index">
-    <nav class="main-nav main-nav--no-js">
+    <nav class="main-nav main-nav--closed main-nav--no-js">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" href="#" aria-label="Мишка">
 
@@ -133,12 +133,12 @@
     <section class="about content-wrapper">
       <h2 class="about__title section-title">Коротко о нас:</h2>
       <ul class="about__list about-list">
-        <li class="about__list-item about__list-item--ecology">Экологически чистые материалы</li>
-        <li class="about__list-item about__list-item--cost">Скандинавский стиль по российской цене</li>
-        <li class="about__list-item about__list-item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="about__list-item about__list-item--handmade">Связано вручную с любовью и умилением</li>
+        <li class="about__list-item about__list-item--ecology">Экологически чистые&nbsp;материалы</li>
+        <li class="about__list-item about__list-item--cost">Скандинавский стиль по&nbsp;российской цене</li>
+        <li class="about__list-item about__list-item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+        <li class="about__list-item about__list-item--handmade">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
         <li class="about__list-item about__list-item--support">Поддержка отечественного производителя</li>
-        <li class="about__list-item about__list-item--pack">Поставляется в подарочной упаковке</li>
+        <li class="about__list-item about__list-item--pack">Поставляется в подарочной&nbsp;упаковке</li>
       </ul>
     </section>
 
@@ -184,8 +184,10 @@
         <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="457"
           alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         <div class="map__marker"></div>
-        <div class="map__interactive " id="map"></div>
+        <!-- <iframe class="map__interactive" id="map"></iframe> -->
+        <iframe class="map__interactive" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625305612!2d30.320853350852264!3d59.938719168966216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1558450204395!5m2!1sru!2see" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
+
 
       <div class="contacts__button-wrapper content-wrapper">
         <a class="contacts__button button" href="#">Напишите нам</a>
@@ -263,11 +265,9 @@
     </form>
   </div>
 
-
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-      href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/liveliness.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
 </body>
 
 </html>

@@ -10,9 +10,12 @@
     padding-top: 60px;
     padding-bottom: 127px;
     background-image: url("../../img/review@1x.jpg");
-    background-size: image-size("../../img/review@1x.jpg");
+    background-size: 350px 457px;
     background-position: left top;
     background-repeat: no-repeat;
+    @media (min-resolution: 144dpi) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -20,10 +23,10 @@
     padding-left: 225px;
     padding-bottom: 183px;
     background-position-x: 50px;
-  }
 
-  @media (min-resolution: 144dpi) {
-    background-image: url("../../img/review@2x.jpg");
+    @media (min-resolution: 144dpi) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
 
   &::after {
@@ -53,6 +56,18 @@
     }
   }
 }
+
+.comments__title {
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    max-width: 300px;
+  }
+}
+
 .comments__content {
   margin: 0;
   padding-top: 3px;
@@ -84,22 +99,28 @@
   display: block;
   font-size: $accent-font-size;
   font-style: normal;
-  line-height: $main-line-height;
-}
+ }
 
 .comments__author-name {
   display: block;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: $accent-font-size;
+  line-height: $main-line-height;
   color: $accent-font-color;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 3px;
-    font-size: 18px;
-    line-height: $second-line-height;
+    font-size: $fourth-font-size;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: $accent-font-size;
+   }
 }
 
 .comments__author-email {
+  line-height: $second-line-height;
+  font-size: $accent-font-size;
   color: $main-font-color;
   text-decoration: none;
 
@@ -110,7 +131,7 @@
   &:active {
     color: $font-color-menu--active;
   }
-}
+ }
 
 .comments__pagination {
   display: flex;
