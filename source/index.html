@@ -12,7 +12,7 @@
 <body class="page">
 
   <header class="page-header page-header--index">
-    <nav class="main-nav main-nav--closed main-nav--no-js">
+    <nav class="main-nav main-nav--no-js">
       <div class="main-nav__logo-wrapper">
         <a class="main-nav__logo header-logo" href="#" aria-label="Мишка">
 
@@ -23,8 +23,7 @@
           </picture>
         </a>
 
-        <button class="main-nav__toggle main-nav__toggle--closed" id="toggle-button" type="button"
-          aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span>
+        <button class="main-nav__toggle" id="toggle-button" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
       <ul class="main-nav__list site-list">
@@ -170,8 +169,7 @@
 
         <dl class="contacts__info">
           <dt class="contacts__info-term">e-mail:</dt>
-          <dd class="contacts__info-description"><a class="mail-link"
-              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          <dd class="contacts__info-description"><a class="mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
 
           <dt class="contacts__info-term">адрес:</dt>
           <dd class="contacts__info-description">г. Санкт-Петербург,<br>
@@ -181,11 +179,10 @@
       </div>
       <div class="contacts__map map">
 
-        <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="457"
-          alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         <div class="map__marker"></div>
         <!-- <iframe class="map__interactive" id="map"></iframe> -->
-        <iframe class="map__interactive" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625305612!2d30.320853350852264!3d59.938719168966216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1558450204395!5m2!1sru!2see" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__interactive" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625305612!2d30.320853350852264!3d59.938719168966216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1558450204395!5m2!1sru!2see" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
       </div>
 
 
@@ -201,7 +198,7 @@
 
       <a class="page-footer__logo footer-logo" aria-label="Мишка">
           <svg class="footer-logo__image" width="102" height="34">
-              <use xlink:href="img/sprite.svg#logo-footer"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
             </svg>
 
       </a>
@@ -217,7 +214,7 @@
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
-            <svg class="social-links__image(...)" width="15" height="28">
+            <svg class="social-links__image" width="15" height="28">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
 
@@ -233,11 +230,10 @@
         </li>
       </ul>
       <p class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="HTML Academy">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <span class="page-footer__copyright-text">Разработано</span>
           <svg class="page-footer__copyright-image" width="27" height="34">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
         </a>
       </p>
@@ -252,7 +248,7 @@
         <legend class="form-cart__legend">Выберите размер:</legend>
 
         <div class="form-cart__input-wrapper">
-          <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked="">
           <label class="form-cart__label" for="size-s">S</label>
           <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
           <label class="form-cart__label" for="size-m">M</label>
@@ -265,9 +261,10 @@
     </form>
   </div>
 
-  <script src="js/svg4everybody.js"></script>
+  <!-- <script src="js/svg4everybody.js"></script> -->
   <script src="js/liveliness.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script> -->
 </body>
 
 </html>
+<!-- В header в главное меню для смены кнопки Закрыть (крестик) на состояние Открыть (гамбургер) необходимо в тег button добавить класс main-nav__toggle--closed -->

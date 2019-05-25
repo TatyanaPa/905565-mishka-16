@@ -39,8 +39,8 @@
   width: 102px;
   height: 34px;
 
-  .footer-logo[href]:hover &,
-  .footer-logo[href]:active & {
+  .footer-logo:hover &,
+  .footer-logo:active & {
     fill: $color-first-hover;
   }
 }

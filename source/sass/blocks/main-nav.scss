@@ -42,6 +42,7 @@
   padding: 0;
   border: 0;
   background-color: transparent;
+  outline: none;
 
   // cursor: pointer;
   // border: 1px dashed greenyellow;
@@ -69,6 +70,7 @@
   }
 
   &--closed {
+    // display: none;
     &::before {
       content: "";
       position: absolute;
@@ -76,7 +78,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 20px;
-      height: 2px;
+      height: 1px;
       box-shadow: 0 6px 0 0 $accent-font-color, 0 12px 0 0 $accent-font-color;
     }
 
@@ -86,9 +88,10 @@
   }
 }
 
-// .main-nav--no-js .main-nav__toggle {
-//   // display: none;
-// }
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
 .main-nav__list {
   @media (min-width: $tablet-width) {
     order: 1;
@@ -136,7 +139,8 @@
       content: "";
     }
   }
-  &--closed не нашла в его разметке HTML {
+
+  &--closed {
     display: none;
 
     @media (min-width: $tablet-width) {
@@ -231,6 +235,7 @@
       content: "";
     }
   }
+
   &--closed {
     display: none;
 
@@ -371,7 +376,7 @@
     display: block;
     order: 2;
     width: 48%;
-     }
+  }
 
   @media (min-width: $desktop-width) {
     order: 4;

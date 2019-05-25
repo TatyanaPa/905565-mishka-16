@@ -13,6 +13,7 @@
     background-size: 350px 457px;
     background-position: left top;
     background-repeat: no-repeat;
+
     @media (min-resolution: 144dpi) {
       background-image: url("../../img/review@2x.jpg");
     }
@@ -99,7 +100,7 @@
   display: block;
   font-size: $accent-font-size;
   font-style: normal;
- }
+}
 
 .comments__author-name {
   display: block;
@@ -115,7 +116,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: $accent-font-size;
-   }
+  }
 }
 
 .comments__author-email {
@@ -131,7 +132,7 @@
   &:active {
     color: $font-color-menu--active;
   }
- }
+}
 
 .comments__pagination {
   display: flex;
