@@ -1,24 +1,69 @@
-$main-font-family: "Opensans", arial, sans-serif;
+$mobile-width: 320px;
+$mobile-l-width: 425px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+// $mobile: "(min-width: ${mobile-width})";
+// $tablet: "(min-width: ${tablet-width})";
+// $desktop: "(min-width: $desktop-width)";
+// @media (min-width: $mobile-width)
+// @media (min-width: $tablet-width);
+// @media (min-width: $desktop-width);
+// @media (min-resolurion: 144dpi)
+//@media (min-resolution: $retina-dpi);
+
+$retina-dpi: 144dpi;
+$main-font-family: "Opensans","Arial",sans-serif;
 $main-font-size: 15px;
 $main-font-color: #444444;
-$main-line-height: 30px;
+$main-line-height: 24px;
 $main-bcg-color: #ffffff;
 
 $accent-font-size: 17px;
-$button-font-size: 18px;
+$fourth-font-size: 18px;
 $second-accent-font-size: 19px;
+$third-font-size: 25px;
 $first-accent-font-size: 27px;
+$font-size-button: $accent-font-size;
 
 $second-form-line-height: 16px;
+$third-line-height: 17px;
 $form-line-height: 18px;
 $accent-line-height: 20px;
-$second-line-height: 24px;
+$second-line-height: 30px;
 
-$second-font-family:"Opensansbold", arial, sans-serif;
-
+$second-font-family: "Opensans","Arial",sans-serif;
+$second-font-weight: bold;
 $accent-font-color: #000000;
-
-$second-bcg-color: #f1f1f1;
-
 $second-accent-color: #63d1bb;
 $third-accent-color: #ffffff;
+$forth-accent-color: #56c3b2;
+$icon-color: rgba($accent-font-color, 0.2%);
+$border-color: #cecece;
+$second-bcg-color: #f1f1f1;
+$third-bcg-color: #f9f9f9;
+$color-first-hover: #46c1ae;
+$color-second-hover: #62d1ba;
+$color-third-hover: #59d5bc;
+$color-second-active: rgba($second-accent-color, 0.3%);
+$font-color-section-title: $accent-font-color;
+$font-color-button: $second-accent-color;
+$font-color-button--hover: $third-accent-color;
+$font-color-button--active: rgba($font-color-button--hover, 0.3%);
+$font-color-mail: $color-first-hover;
+$font-color-menu--hover: rgba($accent-font-color, 0.6%);
+$font-color-menu--active: rgba($accent-font-color, 0.3%);
+$bcg-color-button: $third-accent-color;
+$bg-color-button--hover: $main-font-color;
+$bg-color-button--active: $main-font-color;
+$bg-color-footer: $second-bcg-color;
+$bg-color-icon: rgba($accent-font-color, 0.2%);
+$border-color-button: $main-font-color;
+$border-color-input--hover: $color-second-hover;
+$border-color-input--active: rgba($main-font-color, 0.3%);
+$border-color-modal: #c6c6c6;
+
+@mixin list-reset($padding-left: 0) {
+  margin: 0;
+  padding-left: $padding-left;
+  list-style: none;
+}

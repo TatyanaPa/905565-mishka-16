@@ -1,12 +1,41 @@
 .button {
-  width: 259px;
-  height: 52px;
-  background-color: $main-bcg-color;
-  border: 2px solid #444444;
-  font-family: inherit;
-  font-size: $button-font-size;
-  line-height: $accent-line-height;
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 10px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border: 2px solid $border-color-button;
+  font: inherit;
+  font-size: $font-size-button;
+  font-weight: 700;
+  line-height: 20px;
   color: $main-font-color;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  background-color: $bcg-color-button;
+  cursor: pointer;
+
+  &:hover {
+    color: $font-color-button--hover;
+    background-color: $bg-color-button--hover;
+  }
+
+  &:active {
+    color: $font-color-button--active;
+    background-color: $bg-color-button--active;
+  }
+
+  &--green {
+    border-color: $second-accent-color;
+    color: $third-accent-color;
+    background-color: $second-accent-color;
+
+    &:hover,
+    &:active {
+      border-color: $color-third-hover;
+      background-color: $color-third-hover;
+    }
+  }
 }

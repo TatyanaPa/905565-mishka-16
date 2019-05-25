@@ -1,17 +1,124 @@
-.footer {
-  width: 320px;
-  height: 160px;
-  background-color: $second-bcg-color;
+.page-footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: $bg-color-footer;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 46px;
+  }
 }
 
-.footer__wrapper {
-  margin: 0 auto;
-  width: 260px;
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.developer__text {
-  font-size: $second-accent-font-size;
-  line-height: $form-line-height;
-  font-family: $second-font-family;
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 83px;
+  }
+}
+
+.footer-logo {
+  width: 102px;
+  height: 34px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__image {
+  width: 102px;
+  height: 34px;
+
+  .footer-logo:hover &,
+  .footer-logo:active & {
+    fill: $color-first-hover;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include list-reset();
+  padding-bottom: 19px;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    width: 300px;
+    border-bottom: 0;
+  }
+}
+
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 13px 0 6px;
+  width: 40px;
+  height: 40px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-links__image {
+  .social-links__link:hover &,
+  .social-links__link:active & {
+    fill: $color-first-hover;
+  }
+}
+
+.page-footer__copyright {
+  margin-top: 14px;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 184px;
+  }
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0 7px;
   color: $accent-font-color;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-text {
+  font-size: $second-accent-font-size;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.page-footer__copyright-image {
+  margin-left: 30px;
+  width: 27px;
+  height: 34px;
+  fill: $second-accent-color;
+
+  .page-footer__copyright-link:hover &,
+  .page-footer__copyright-link:active & {
+    fill: $color-first-hover;
+  }
 }
