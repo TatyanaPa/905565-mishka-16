@@ -16,8 +16,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 30px;
+    right: 30px;
     bottom: 0;
     height: 7px;
     background-image: url("../../img/bg-zigzag-line.svg");
@@ -26,6 +26,8 @@
     background-repeat: repeat-x;
 
     @media (min-width: $tablet-width) {
+      left: 50px;
+      right: 50px;
       height: 17px;
       background-size: 768px 17px;
       background-position-x: -20px;
