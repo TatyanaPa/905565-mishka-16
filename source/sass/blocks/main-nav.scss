@@ -107,6 +107,7 @@
   box-sizing: border-box;
 
   @include list-reset();
+  // text-align: center;
   font-size: $accent-font-size;
   font-weight: 700;
 
@@ -205,6 +206,7 @@
   box-sizing: border-box;
 
   @include list-reset();
+  // text-align: center;
   font-size: $accent-font-size;
   font-weight: 700;
 
