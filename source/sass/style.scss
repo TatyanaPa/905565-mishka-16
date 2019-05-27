@@ -27,6 +27,10 @@
   background-color: $main-bcg-color;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
