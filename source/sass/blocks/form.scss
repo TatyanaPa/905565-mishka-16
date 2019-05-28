@@ -327,6 +327,10 @@
   .form__radio:checked + &::after {
     display: block;
   }
+
+  .form__radio:focus + &::before {
+    border-color: $color-second-hover;
+  }
 }
 
 .form__label-checkbox {
@@ -390,6 +394,10 @@
 
   .form__checkbox:checked + &::after {
     display: block;
+  }
+
+  .form__checkbox:focus + &::before {
+    border-color: $color-second-hover;
   }
 }
 

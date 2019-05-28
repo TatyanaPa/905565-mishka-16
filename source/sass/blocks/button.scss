@@ -17,7 +17,9 @@
   background-color: $bcg-color-button;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: $font-color-button--hover;
     background-color: $bg-color-button--hover;
   }

@@ -200,7 +200,9 @@
     background-size: 50px 26px;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
+    outline: none;
     opacity: 0.6;
   }
 
